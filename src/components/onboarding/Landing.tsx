@@ -3,6 +3,7 @@ import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaHandPointRight } from 'react-icons/fa';
 import onBoardingStyles from './onboarding.module.css';
+import FbAutomation from '../../automation/FbAutomation';
 // import categoryScroll from '../../media/category-scroll.mp4';
 
 const Landing = ({ history }) => {
@@ -11,7 +12,7 @@ const Landing = ({ history }) => {
       Already have your data?
     </Tooltip>
   );
-
+  FbAutomation();
   return (
     <div className={onBoardingStyles.landing}>
       <div className={onBoardingStyles.header}>
